@@ -1,0 +1,115 @@
+---
+title: Publications
+layout: default
+group: publications
+---
+
+<h1>Publications</h1>
+<div class="container-fluid">
+
+<!-- Check if there are publications -->
+{% if site.publications.size > 0 %}
+  <!-- Sort publications by pub_date in descending order -->
+  {% assign sorted_publications = site.publications | sort: "pub_date" | reverse %}
+
+  <!-- Loop through sorted publications and display them -->
+  {% for publication in sorted_publications %}
+    <hr>
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
+      <div>
+        <h5>{{ publication.title | markdownify | remove: '<p>' | remove: '</p>' }}</h5>
+        <h6>{{ publication.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
+
+        <!-- Display journal or Biorxiv info -->
+        {% if publication.journal %}
+          <i class="publication-journal">{{ publication.journal }},</i> {{ publication.pub_date | split: "-" | first }}
+        {% else %}
+          {% if publication.biorxiv %}
+            <i class="publication-journal">Biorxiv,</i> {{ publication.pub_date | split: "-" | first }}
+          {% elsif publication.biorxiv_version %}
+            <i class="publication-journal">Biorxiv,</i> {{ publication.pub_date | split: "-" | first }}
+          {% else %}
+            <i class="publication-journal">Preprint,</i> {{ publication.pub_date | split: "-" | first }}
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Publication Details -->
+    <div class="row" style="padding-top: 20px; margin-top: -20px">
+      <div class="col-sm-6">
+        <img class="img-fluid" src="{{ publication.image }}" alt="Key Figure" style="max-height: 200px;">
+      </div>
+      <ul class="col-sm-6">
+        <br>
+        <h6>Access the paper</h6>
+
+        <!-- Display links to PMID and PMCID if available -->
+        {% if publication.pmid %}
+          <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{publication.pmid}}" target="_blank">{{ publication.pmid }}</a></li>
+        {% endif %}
+
+        {% if publication.pmcid %}
+          <li>PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{publication.pmcid}}" target="_blank">{{ publication.pmcid }}</a></li>
+        {% endif %}
+
+        <!-- Display Biorxiv Preprint links if available -->
+        {% if publication.biorxiv %}
+          <li>Biorxiv Preprint: <a href="http://dx.doi.org/10.1101/{{publication.biorxiv}}" target="_blank">{{ publication.biorxiv | split: "." | last }}</a></li>
+        {% endif %}
+
+        <!-- Display Zenodo records if available -->
+        {% if publication.zenodo %}
+          <li>Zenodo Record{% if publication.zenodo.size > 1 %}s{% endif %}:
+            {% for record in publication.zenodo %}
+              <a href="https://www.zenodo.org/record/{{ record.code }}/" target="_blank">{{ record.code }}</a>
+            {% endfor %}
+          </li>
+        {% endif %}
+
+        <!-- Display GitHub repositories if available -->
+        {% if publication.github %}
+          <li>GitHub Repository{% if publication.github.size > 1 %}s{% endif %}:
+            {% for record in publication.github %}
+              <a href="https://www.github.com/{{ record.url }}/" target="_blank">{{ record.url }}</a>
+            {% endfor %}
+          </li>
+        {% endif %}
+
+        <!-- Display any additional links -->
+        {% if publication.links %}
+          <br><h6>Additional Link{% if publication.links.size > 1 %}s{% endif %}</h6>
+          {% for link in publication.links %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+    <br>
+  {% endfor %}
+
+  <!-- Pagination (if enabled) -->
+  {% if paginator.pages.size > 1 %}
+    <div class="pagination">
+      <span class="prev">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}">Previous</a>
+        {% else %}
+          <span>Previous</span>
+        {% endif %}
+      </span>
+      <span class="next">
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}">Next</a>
+        {% else %}
+          <span>Next</span>
+        {% endif %}
+      </span>
+    </div>
+  {% endif %}
+
+{% else %}
+  <p>No publications available.</p>
+{% endif %}
+
+</div>
