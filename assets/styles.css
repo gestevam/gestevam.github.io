@@ -365,7 +365,8 @@ body.about-page .navbar {
 @media (max-width: 768px) {
   .about-page .content {
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 60px 15px;
+    margin: 0;
   }
 
   .about-page .figure {
@@ -396,6 +397,7 @@ body.about-page .navbar {
     margin-bottom: 15px;
   }
 }
+
 
 
 /*--------------------- contact form --------------------------*/
