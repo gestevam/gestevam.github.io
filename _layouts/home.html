@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- gen style -->
+  <style>
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px;
+    }
+
+    #home {
+      background-color: white;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      padding: 17px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-right li {
+      margin: 0 20px;
+    }
+
+    .nav-right a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .nav-right a:hover {
+      text-decoration: none;
+    }
+
+    /* hamburger */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 36px;
+      color: #8A2BE2;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-right.active {
+        display: flex;
+      }
+
+      .nav-right li {
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    body {
+      padding-top: -10px;
+    }
+
+    /* contact */
+    .contact-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-section a img {
+      width: 30px;
+      height: 30px;
+      margin: 0 0;
+    }
+
+    #about-home {
+      margin-top: -120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* fig */
+    #about-home .figure img {
+      max-width: 40%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    /* fig text */
+    #about-home .text-block {
+      max-width: 50%;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    /* mobile */
+    @media screen and (max-width: 768px) {
+      #about-home {
+        flex-direction: column; /* stack content in mobile */
+        text-align: center;
+        padding: 10px;
+      }
+
+      #about-home .figure img {
+        max-width: 100%;
+        height: auto; /*  aspect ratio */
+        margin-bottom: 20px;
+      }
+
+      #about-home .text-block {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="home-page">
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>Gabriella O. Estevam</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-right">
+      <li><a href="/" class="home-active">home</a></li>
+      <li><a href="/publications/">publications</a></li>
+      <li><a href="/blog/">blog</a></li>
+      <li><a href="/about/">about</a></li>
+    </ul>
+  </nav>
+
+  <!-- landing  -->
+  <section id="home">
+      <div class="figure" style="position: relative; text-align: center;">
+          <img src="/static/img/abt/frame1.png" alt="Cool Figure" style="
+              width: 100vw;
+              height: 90vh;
+              object-fit: cover;
+              display: block;">
+          <div style="
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              color: #CED4DA;
+              font-size: 11px;
+              padding: 5px 10px;
+              font-family: Arial, sans-serif;">
+              PDB 3DKC
+          </div>
+      </div>
+  </section>
+
+
+  <!-- pymol scroll -->
+  <script>
+  document.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+    const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollPosition / totalScroll;
+
+    let frameNumber = Math.min(6, Math.max(1, Math.ceil(progress * 30))); // frame rate
+
+    const homeImage = document.querySelector("#home img");
+    homeImage.src = `/static/img/home/frame${frameNumber}.png`;
+  });
+</script>
+
+  <!-- top vis divider -->
+  <hr style="border: 1px solid #E6D2F9; width: 80%;">
+
+  <!-- about, abridged -->
+  <section id="about-home" style="margin-top: -50px; padding-top: 0; padding-bottom: 20px;">
+    <div class="figure" style="max-width: 45%; margin-right: 0px;">
+      <img src="/static/img/abt/IMG_6854.jpg" alt="A description of the image" style="max-width: 60%; height: auto;">
+    </div>
+    <div class="text-block" style="max-width: 40%; text-align: left; margin-top: 0;">
+      <p>Hi, I'm Gabriella! I'm a biochemist and structural biologist.<p>
+      <p>Welcome to my site, where you can explore my work, publications, and more.</p>
+      <p>Visit my <a href="/about/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">about page</a>
+        to learn more about me.</p>
+    </div>
+  </section>
+
+  <!-- bottom vis divider -->
+  <hr style="border: 1px solid #E6D2F9; width: 80%;">
+
+  <!-- footer section -->
+  <div style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto;
+      position: relative;">
+
+    <!-- copyright -->
+    <div style="
+        font-size: 11px;
+        color: #CED4DA;
+        position: absolute;
+        left: 0;">
+        © <span id="year"></span>
+    </div>
+
+    <!-- social -->
+    <div class="contact-section" style="display: flex; align-items: center; gap: 10px;">
+      <a href="https://linkedin.com/in/gestevam" target="_blank">
+        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
+      </a>
+      <a href="https://github.com/gestevam" target="_blank">
+        <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
+      </a>
+      <a href="/contact">
+        <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function toggleMenu() {
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+  </script>
+
+
+
+</body>
+</html>
