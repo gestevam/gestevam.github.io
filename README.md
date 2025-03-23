@@ -18,3 +18,5 @@ To make a similar site:
      <br>conda activate jekyll
      <br>bundle install
      <br>bundle exec jekyll serve</p>
+
+This website was built with inspiration from open source code
