@@ -12,7 +12,7 @@ group: publications
   <!-- Sort publications by pub_date in descending order -->
   {% assign sorted_publications = site.publications | sort: "pub_date" | reverse %}
 
-  <!-- loop through sorted publications -->
+  <!-- loop through publications -->
   {% for publication in sorted_publications %}
     <hr>
     <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
