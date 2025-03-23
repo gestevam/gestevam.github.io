@@ -7,12 +7,12 @@ group: publications
 <h1>Publications</h1>
 <div class="container-fluid">
 
-<!-- Check if there are publications -->
+<!-- check publications -->
 {% if site.publications.size > 0 %}
   <!-- Sort publications by pub_date in descending order -->
   {% assign sorted_publications = site.publications | sort: "pub_date" | reverse %}
 
-  <!-- Loop through sorted publications and display them -->
+  <!-- loop through sorted publications -->
   {% for publication in sorted_publications %}
     <hr>
     <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
@@ -20,7 +20,7 @@ group: publications
         <h5>{{ publication.title | markdownify | remove: '<p>' | remove: '</p>' }}</h5>
         <h6>{{ publication.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
 
-        <!-- Display journal or Biorxiv info -->
+        <!-- display journal -->
         {% if publication.journal %}
           <i class="publication-journal">{{ publication.journal }},</i> {{ publication.pub_date | split: "-" | first }}
         {% else %}
@@ -35,7 +35,7 @@ group: publications
       </div>
     </div>
 
-    <!-- Publication Details -->
+    <!-- publication info -->
     <div class="row" style="padding-top: 20px; margin-top: -20px">
       <div class="col-sm-6">
         <img class="img-fluid" src="{{ publication.image }}" alt="Key Figure" style="max-height: 200px;">
@@ -44,7 +44,7 @@ group: publications
         <br>
         <h6>Access the paper</h6>
 
-        <!-- Display links to PMID and PMCID if available -->
+        <!-- links -->
         {% if publication.pmid %}
           <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{publication.pmid}}" target="_blank">{{ publication.pmid }}</a></li>
         {% endif %}
@@ -53,12 +53,12 @@ group: publications
           <li>PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{publication.pmcid}}" target="_blank">{{ publication.pmcid }}</a></li>
         {% endif %}
 
-        <!-- Display Biorxiv Preprint links if available -->
+        <!-- preprint info -->
         {% if publication.biorxiv %}
           <li>Biorxiv Preprint: <a href="http://dx.doi.org/10.1101/{{publication.biorxiv}}" target="_blank">{{ publication.biorxiv | split: "." | last }}</a></li>
         {% endif %}
 
-        <!-- Display Zenodo records if available -->
+        <!-- zenodo -->
         {% if publication.zenodo %}
           <li>Zenodo Record{% if publication.zenodo.size > 1 %}s{% endif %}:
             {% for record in publication.zenodo %}
@@ -67,7 +67,7 @@ group: publications
           </li>
         {% endif %}
 
-        <!-- Display GitHub repositories if available -->
+        <!-- github repos -->
         {% if publication.github %}
           <li>GitHub Repository{% if publication.github.size > 1 %}s{% endif %}:
             {% for record in publication.github %}
@@ -76,7 +76,7 @@ group: publications
           </li>
         {% endif %}
 
-        <!-- Display any additional links -->
+        <!-- additional links -->
         {% if publication.links %}
           <br><h6>Additional Link{% if publication.links.size > 1 %}s{% endif %}</h6>
           {% for link in publication.links %}
@@ -88,7 +88,7 @@ group: publications
     <br>
   {% endfor %}
 
-  <!-- Pagination (if enabled) -->
+  <!-- pagination -->
   {% if paginator.pages.size > 1 %}
     <div class="pagination">
       <span class="prev">
