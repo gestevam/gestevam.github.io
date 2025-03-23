@@ -1,18 +1,20 @@
 # gabriellaestevam
 
-====================
 
 Technologies this website uses:
+   <p>Jekyll
+     <br>
+     Github Pages </p>
 
-Jekyll  
-Github Pages  
+To make a similar site:
 
-sudo gem install bundler
-bundle install
-bundle exec jekyll serve
+1. Check Gemfile plugins using the bundler tool - make sure they work on you local system
+   <p>sudo gem install bundler
+     <br>bundle install
+     bundle exec jekyll serve </p>
 
-create a conda environment - locally test and host: 
-conda create -n jekyll -c conda-forge rb-jekyll
-conda activate jekyll
-bundle install
-bundle exec jekyll serve
+2. Create a conda environment - locally test and host:
+   <p>conda create -n jekyll -c conda-forge rb-jekyll
+     <br>conda activate jekyll
+     <br>bundle install
+     <br>bundle exec jekyll serve</p>
