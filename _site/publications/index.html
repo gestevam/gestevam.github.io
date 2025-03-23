@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>publications</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+
+    /* navbar style */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      padding: 17px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-right li {
+      margin: 0 20px;
+    }
+
+    /* hamburger */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 36px;
+      color: #8A2BE2;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-right.active {
+        display: flex;
+      }
+
+      .nav-right li {
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="publications-page ">
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>Gabriella O. Estevam</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-right">
+      <li><a href="/" class="">home</a></li>
+      <li><a href="/publications/" class="active">publications</a></li>
+      <li><a href="/blog/" class="">blog</a></li>
+      <li><a href="/about/" class="">about</a></li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <div class="content">
+    <h1 class="publications-title">Publications</h1>
+<hr class="publications-line" />
+
+<div class="container-fluid">
+  
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="39980226">
+      <div>
+        <h5 class="publication-title">MET variants with activating N-lobe mutations identified in hereditary papillary renal cell carcinomas still require ligand stimulation
+</h5>
+        <h6 class="publication-authors">Guerin C, Vinchent A, Fernandes M, Damour I, Laratte A, Tellier R, <strong>Estevam GO</strong>, Meneboo JP, Villenet C, Descarpentries C, Fraser JS, Figeac M, Cortot AB, Rouleau E, Tulasne D
+</h6>
+
+        
+          <i>Molecular Oncology,</i>
+        
+
+        2025
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2023_guerin.png" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/39980226" target="_blank">39980226</a></li>
+          
+          
+            <li><a href="https://febs.onlinelibrary.wiley.com/doi/epdf/10.1002/1878-0261.13806" target="_blank">Full Text</a></li>
+          
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+          
+            <li><a href="https://pasteur-lille.fr/en/center-of-research/" target="_blank">David Tulasne @ Institute Pasteur De Lille</a></li>
+          
+            <li><a href="https://fraserlab.com/" target="_blank">Fraser Lab @ UC San Francisco</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="39960754">
+      <div>
+        <h5 class="publication-title">Mapping kinase domain resistance mechanisms for the MET receptor tyrosine kinase via deep mutational scanning
+</h5>
+        <h6 class="publication-authors"><strong>Estevam GO</strong>, Linossi EM, Rao J, Macdonald CM, Ravikumar A, Chrispens KM, Capra JA, Coyote-Maestas W, Pimentel H, Collisson EA, Jura N, Fraser JS
+</h6>
+
+        
+          <i>eLife,</i>
+        
+
+        2025
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2024_estevam.png" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/39960754" target="_blank">39960754</a></li>
+          
+          
+            <li><a href="https://elifesciences.org/articles/101882" target="_blank">Full Text</a></li>
+          
+          
+            <li><a href="https://doi.org/2024.07.16.603579v2" target="_blank">Biorxiv Version</a></li>
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+            <li>
+              <a href="https://github.com/fraser-lab/MET_kinase_Inhibitor_DMS" target="_blank">Github repository MET_kinase_Inhibitor_DMS</a>
+            </li>
+          
+          
+            <li><a href="https://fraserlab.com/" target="_blank">Fraser Lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://cvri.ucsf.edu/~jura/" target="_blank">Jura lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://www.fredhutch.org/en/faculty-lab-directory/collisson-eric.html" target="_blank">Collisson lab @ Fred Hutch Cancer Center</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="39829748">
+      <div>
+        <h5 class="publication-title">Engineering of CRISPR-Cas PAM recognition using deep learning of vast evolutionary data
+</h5>
+        <h6 class="publication-authors">Nayfach S, Bhatnagar A, Novichkov A, <strong>Estevam GO</strong>, Kim N, Hill E, Ruffolo JA,  Silverstein R, Gallagher J, Kleinstiver B, Meeske AJ, Cameron P, Madani A
+</h6>
+
+        
+          <i>Preprint,</i>
+        
+
+        2025
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2025_nayfach.png" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/39829748" target="_blank">39829748</a></li>
+          
+          
+          
+            <li><a href="https://doi.org/https://doi.org/10.1101/2025.01.06.631536" target="_blank">Biorxiv Version</a></li>
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+          
+            <li><a href="https://www.profluent.bio/" target="_blank">Profluent</a></li>
+          
+            <li><a href="https://protein2pam.profluent.bio/login" target="_blank">Protein2PAM</a></li>
+          
+            <li><a href="https://www.kleinstiverlab.org/" target="_blank">Kleinstiver Lab @ Harvard Medical School</a></li>
+          
+            <li><a href="https://meeskelab.org/" target="_blank">Meeske Lab @ University of Washington</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="39268701">
+      <div>
+        <h5 class="publication-title">Conserved regulatory motifs in the juxtamembrane domain and kinase N-lobe revealed through deep mutational scanning of the MET receptor tyrosine kinase domain
+</h5>
+        <h6 class="publication-authors"><strong>Estevam GO</strong>, Linossi EM, Macdonald CM, Espinoza CA, Michaud JM, Coyote-Maestas W, Collisson EA, Jura N, Fraser JS
+</h6>
+
+        
+          <i>eLife,</i>
+        
+
+        2024
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2023_estevam.png" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/39268701" target="_blank">39268701</a></li>
+          
+          
+            <li><a href="https://elifesciences.org/articles/91619" target="_blank">Full Text</a></li>
+          
+          
+            <li><a href="https://doi.org/2023.08.03.551866v3" target="_blank">Biorxiv Version</a></li>
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+            <li>
+              <a href="https://github.com/fraser-lab/MET_KinaseDomain_DMS" target="_blank">Github repository MET_KinaseDomain_DMS</a>
+            </li>
+          
+          
+            <li><a href="https://fraserlab.com" target="_blank">Fraser lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://cvri.ucsf.edu/~jura/" target="_blank">Jura lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://www.fredhutch.org/en/faculty-lab-directory/collisson-eric.html" target="_blank">Collisson lab @ Fred Hutch Cancer Center</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="38789982">
+      <div>
+        <h5 class="publication-title">Rosace: a robust deep mutational scanning analysis framework employing position and mean-variance shrinkage
+</h5>
+        <h6 class="publication-authors">Rao J, Xin R, Macdonald CB, Howard M, <strong>Estevam GO</strong>, Yee SW, Wang M, Fraser JS, Coyote-Maestas W, Pimentel H
+</h6>
+
+        
+          <i>Genome Biology,</i>
+        
+
+        2024
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2023_rao.jpg" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/38789982" target="_blank">38789982</a></li>
+          
+          
+            <li><a href="https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-024-03279-7.pdf" target="_blank">Full Text</a></li>
+          
+          
+            <li><a href="https://doi.org/2023.10.24.562292v1" target="_blank">Biorxiv Version</a></li>
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+            <li>
+              <a href="https://github.com/pimentellab/rosace" target="_blank">Github repository for Rosace</a>
+            </li>
+          
+          
+            <li><a href="https://pimentellab.com/" target="_blank">Pimentel Lab @ UC Los Angeles</a></li>
+          
+            <li><a href="https://www.wcoyotelab.com/" target="_blank">Coyote-Maestas Lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://fraserlab.com" target="_blank">Fraser Lab @ UC San Francisco</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+    <div class="row" style="padding-top: 60px; margin-top: -60px;" id="33860789">
+      <div>
+        <h5 class="publication-title">State of the structure address on MET receptor activation by HGF
+</h5>
+        <h6 class="publication-authors">Linossi EM, <strong>Estevam GO</strong>, Oshima M, Fraser JS, Collisson EA, Jura N
+</h6>
+
+        
+          <i>Biochemical Society Transactions,</i>
+        
+
+        2021
+      </div>
+    </div>
+
+    <!-- flexbox-->
+    <div class="row publication-content">
+      <!-- key fig, left -->
+      <div class="col-sm-6 publication-image">
+        <img class="img-fluid" src="/static/img/pub/2021_linossi.jpg" alt="Key Figure" style="max-height: 200px;" />
+      </div>
+
+      <!-- links, right -->
+      <div class="col-sm-6 publication-links-container">
+        <h6>Access the Paper</h6>
+        <ul class="publication-links">
+          
+            <li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/33860789" target="_blank">33860789</a></li>
+          
+          
+            <li><a href="https://portlandpress.com/biochemsoctrans/article-abstract/49/2/645/228379/State-of-the-structure-address-on-MET-receptor?redirectedFrom=fulltext" target="_blank">Full Text</a></li>
+          
+          
+        </ul>
+
+        <h6>Additional Links</h6>
+        <ul class="publication-links">
+          
+          
+            <li><a href="https://cvri.ucsf.edu/~jura/" target="_blank">Jura lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://fraserlab.com/" target="_blank">Fraser Lab @ UC San Francisco</a></li>
+          
+            <li><a href="https://www.fredhutch.org/en/faculty-lab-directory/collisson-eric.html" target="_blank">Collisson lab @ Fred Hutch Cancer Center</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+  
+</div>
+
+  </div>
+
+  <!-- footer-->
+  <div style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto;
+      position: relative;">
+
+    <!-- copyright -->
+    <div style="
+        font-size: 12px;
+        color: #CED4DA;
+        position: absolute;
+        left: 0;">
+      © <span id="year"></span>
+    </div>
+
+    
+    <div class="contact-section" style="display: flex; align-items: center; gap: 10px;">
+      <a href="https://linkedin.com/in/gestevam" target="_blank">
+        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
+      </a>
+      <a href="https://github.com/gestevam" target="_blank">
+        <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
+      </a>
+      <a href="/contact">
+        <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
+      </a>
+    </div>
+    
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

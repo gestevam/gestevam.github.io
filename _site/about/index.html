@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+
+    /* navbar style */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      padding: 17px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-right li {
+      margin: 0 20px;
+    }
+
+    /* hamburger */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 36px;
+      color: #8A2BE2;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-right.active {
+        display: flex;
+      }
+
+      .nav-right li {
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="about-page ">
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>Gabriella O. Estevam</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-right">
+      <li><a href="/" class="">home</a></li>
+      <li><a href="/publications/" class="">publications</a></li>
+      <li><a href="/blog/" class="">blog</a></li>
+      <li><a href="/about/" class="active">about</a></li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <div class="content">
+    <div class="content about-page">
+  <div class="figure">
+    <img src="/static/img/abt/IMG_6854.jpg" alt="A description of the image" style="max-width: 100%;" />
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/gestevam" target="_blank">
+        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" class="social-icon" /> @gestevam
+      </a>
+      <a href="https://github.com/gestevam" target="_blank">
+        <img src="/static/img/social/github-mark.png" alt="GitHub" class="social-icon" /> @gestevam
+      </a>
+      <a href="/contact">
+          <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" /> @email
+      </a>
+    </div>
+  </div>
+  <div class="text-block">
+
+  <p>Hi, I'm Gabriella! I'm a biochemist and structural biologist.<p>
+
+  <p>While earning a BS in <a href="https://science.ucsc.edu/department/chemistry/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">Biochemistry and Molecular Biology</a> at the University of California, Santa Cruz (UCSC), I became drawn to the process of scientific discovery - how hypotheses are generated, how experiments are designed, and how research evolves. In my second year, I joined the lab of <a href="https://stone.chemistry.ucsc.edu/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Dr. Michael Stone</a>, studying the telomerase RNP through biochemical and biophysical approaches. This was my first exposure to structural biology, from visualizing DNA chirality in PyMOL to shadowing graduate students modeling protein structures from x-ray crystallography diffraction data. This set the stage for me to conduct independent research on telomerase replication slippage and earn an undergraduate <a href="https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/100-199/chem-195c/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">Honors Thesis in Biochemistry.</a><p>
+
+  <p>Immediately after, I joined the <a href="https://tetrad.ucsf.edu/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Tetrad Graduate Program</a>  at the University of California, San Francisco (UCSF), further immersing myself in the process of scientific discovery. I completed my PhD in Biochemistry and Molecular Biology, where my thesis work in the lab of <a href="https://fraserlab.com/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Dr. James Fraser</a> leveraged deep mutational scanning (DMS), a massively-parallel, pooled screening approach, to define the phenotypic and drug resistance landscape of the cancer-associated MET receptor tyrosine kinase (RTK). By probing thousands of mutations against available small molecule inhibitors, I uncovered crucial interactions that influence drug efficacy, and extracted patterns in structural sensitivity. I also applied computational structural biology to study the conformational ensemble of the MET kinase domain, and collaborated with machine learning scientists to augment predictive models with DMS and biophysical data. You can hear more about this work through my <a href="https://www.youtube.com/watch?v=oqGpHvrWUrQ" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">invited talk</a>, hosted by <a href="https://www.varianteffect.org/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">Atlas of Variant Effects.</a><p>
+
+  <p>Currently, my work integrates structural biology with protein engineering and design. I am passionate about expanding our understanding of the biophysical “rules” of proteins and applying these insights to novel therapeutics. I was honored to be recognized in the San Francisco Business Times as part of the <a href="https://www.bizjournals.com/sanfrancisco/news/2024/03/14/nex-gen-researchers.html" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> next generation of biotech superstars in the Bay Area.</a>
+
+  <p>I have built this website as a commitment to share scientific work and perspectives through my <a href="/blog/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">blog</a> and <a href="/publications/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">publications</a>, and remain a committed, active scientific contributor - let’s collaborate!<p>
+
+  <p>Thank you for visiting!<p>  
+</p></p></p></p></p></p></p></p></p></p></p></div></div>
+
+  </div>
+
+  <!-- footer-->
+  <div style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto;
+      position: relative;">
+
+    <!-- copyright -->
+    <div style="
+        font-size: 12px;
+        color: #CED4DA;
+        position: absolute;
+        left: 0;">
+      © <span id="year"></span>
+    </div>
+
+    
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

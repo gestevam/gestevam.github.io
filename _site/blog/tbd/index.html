@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TBD</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+
+    /* navbar style */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      padding: 17px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-right li {
+      margin: 0 20px;
+    }
+
+    /* hamburger */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 36px;
+      color: #8A2BE2;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-right.active {
+        display: flex;
+      }
+
+      .nav-right li {
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="blog-page ">
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>Gabriella O. Estevam</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-right">
+      <li><a href="/" class="">home</a></li>
+      <li><a href="/publications/" class="">publications</a></li>
+      <li><a href="/blog/" class="active">blog</a></li>
+      <li><a href="/about/" class="">about</a></li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <div class="content">
+    <div class="container-fluid blog-container">
+  <article class="blog-post">
+    <h1 class="blog-title">TBD</h1>
+    <h6 class="blog-meta">February 16, 2025 | Gabriella Estevam</h6>
+
+    <div class="blog-content">
+      <p>Coming soon!</p>
+
+    </div>
+
+    <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+  </article>
+</div>
+
+  </div>
+
+  <!-- footer-->
+  <div style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto;
+      position: relative;">
+
+    <!-- copyright -->
+    <div style="
+        font-size: 12px;
+        color: #CED4DA;
+        position: absolute;
+        left: 0;">
+      © <span id="year"></span>
+    </div>
+
+    
+    <div class="contact-section" style="display: flex; align-items: center; gap: 10px;">
+      <a href="https://linkedin.com/in/gestevam" target="_blank">
+        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
+      </a>
+      <a href="https://github.com/gestevam" target="_blank">
+        <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
+      </a>
+      <a href="/contact">
+        <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
+      </a>
+    </div>
+    
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
