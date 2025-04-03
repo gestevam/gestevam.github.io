@@ -237,30 +237,19 @@
   <!-- bottom vis divider -->
   <hr style="border: 1px solid #E6D2F9; width: 80%;">
 
-  <!-- footer section -->
+  <!-- footer -->
   <div style="
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 80%;
-      margin: 20px auto;
+      margin: 10px auto;
+      text-align: center;
       position: relative;">
 
-  <!-- copyright -->
-  <div style="
-        font-size: 11px;
-        color: #CED4DA;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        width: 100%;">
-        © <span id="year"></span>
-    </div>
-
     <!-- social -->
-    <div class="contact-section" style="display: flex; align-items: center; gap: 10px;">
+    <div class="contact-section" style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
       <a href="https://linkedin.com/in/gestevam" target="_blank">
         <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
       </a>
@@ -271,7 +260,12 @@
         <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
       </a>
     </div>
-  </div>
+
+    <!-- copyright -->
+    <div style="font-size: 11px; color: #CED4DA;">
+        © <span id="year"></span>
+      </div>
+    </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
