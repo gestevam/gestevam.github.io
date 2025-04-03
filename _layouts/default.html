@@ -98,50 +98,45 @@
     {{ content }}
   </div>
 
-  <!-- footer-->
+  <!-- footer -->
   <div style="
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 80%;
       margin: 20px auto;
+      text-align: center;
       position: relative;">
 
-  <!-- copyright -->
-  <div style="
-        font-size: 11px;
-        color: #CED4DA;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        width: 100%;">
-        © <span id="year"></span>
-    </div>
+  <!-- social -->
+  {% unless page.body_class == "about-page" %}
+  <div class="contact-section" style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+    <a href="https://linkedin.com/in/gestevam" target="_blank">
+      <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
+    </a>
+    <a href="https://github.com/gestevam" target="_blank">
+      <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
+    </a>
+    <a href="/contact">
+      <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
+    </a>
+  </div>
+  {% endunless %}
 
-    {% unless page.body_class == "about-page" %}
-    <div class="contact-section" style="display: flex; align-items: center; gap: 10px;">
-      <a href="https://linkedin.com/in/gestevam" target="_blank">
-        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
-      </a>
-      <a href="https://github.com/gestevam" target="_blank">
-        <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
-      </a>
-      <a href="/contact">
-        <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
-      </a>
+  <!-- copyright -->
+  <div style="font-size: 11px; color: #CED4DA;">
+      © <span id="year"></span>
     </div>
-    {% endunless %}
   </div>
 
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-right').classList.toggle('active');
-    }
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-right').classList.toggle('active');
+  }
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>
