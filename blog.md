@@ -11,10 +11,10 @@ permalink: /blog/
     {% for post in site.posts %}
       <hr>
       <div class="row blog-entry">
-        <div>
+        <div class="col-md-6"> <!-- Set to 50% width -->
           <h5><a href="{{ post.url }}" class="blog-title">{{ post.title }}</a></h5>
           <h6 class="blog-meta">{{ post.date | date: "%B %d, %Y" }} | {{ post.author }}</h6>
-          <p>{{ post.excerpt }} <a href="{{ post.url }}" class="read-more">Read more...</a></p>
+          <p>{{ post.content | markdownify }}</p> <!-- Show full content of the post -->
         </div>
       </div>
     {% endfor %}
