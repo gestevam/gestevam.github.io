@@ -29,6 +29,6 @@ body_class: about-page
 
   <p>Currently, my work integrates structural biology with protein engineering and design. I am passionate about expanding our understanding of the biophysical “rules” of proteins and applying these insights to novel therapeutics. I was honored to be recognized in the <a href="https://www.bizjournals.com/sanfrancisco" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> San Francisco Business Times</a> as part of the <a href="https://www.bizjournals.com/sanfrancisco/news/2024/03/14/nex-gen-researchers.html" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> next generation of biotech superstars in the Bay Area.</a>
 
-  <p>I have built this website as a commitment to share scientific work and remain a committed, active scientific contributor - <a href="/contact/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">let's collaborate!</a><p>
+  <p>I have built this website as a commitment to share scientific work and remain a committed, active scientific contributor — <a href="/contact/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">let's collaborate!</a><p>
 
   <p>Thank you for visiting!<p>  
