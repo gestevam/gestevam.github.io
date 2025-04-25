@@ -215,7 +215,7 @@ body.publications-page .content {
 body.blog-page {
   font-family: Arial, sans-serif;
   font-size: 17px;
-  color: #495057;
+  color: gray;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -230,11 +230,16 @@ body.blog-page {
   margin-top: 60px;
   font-size: 35px;
   font-weight: normal;
+  color: #gray;
 }
 
 .blog-page .content {
   margin: 0 150px 10px;
   line-height: 1.8;
+}
+
+.blog-page .blog-entry p {
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -255,8 +260,9 @@ body.blog-page {
 }
 
 .blog-meta {
-  font-size: 15px;
-  color: gray;
+  font-size: 17px;
+  font-weight: 300;
+  color: #8806CE;
 }
 
 .read-more {
@@ -274,7 +280,7 @@ body.blog-page {
 body.blog-post {
   font-family: Arial, sans-serif;
   font-size: 17px;
-  color: #495057;
+  color: black;
 }
 
 .blog-post .content {
@@ -283,18 +289,20 @@ body.blog-post {
 
 .blog-post h1 {
   font-weight: normal;
-  font-size: 35px;
+  font-size: 30px;
   color: #8806CE;
 }
 
 .blog-post .blog-meta {
-  font-size: 15px;
-  color: gray;
+  font-size: 17px;
+  font-weight: 300;
+  color: #8806CE;
   margin-bottom: 20px;
 }
 
 .blog-post p {
   line-height: 1.8;
+  color: black;
 }
 
 .blog-post .back-to-blog {
