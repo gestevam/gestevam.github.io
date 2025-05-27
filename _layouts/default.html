@@ -77,7 +77,7 @@
     }
   </style>
 </head>
-<body class="{{ page.body_class | default: 'default-class' }} {% if page.title == 'Blog' %}blog-page{% endif %}">
+<body class="{{ page.body_class | default: 'default-class' }} {% if page.title == 'writing' %}writing-page{% endif %}">
 
   <!-- navbar -->
   <nav class="navbar">
@@ -88,10 +88,11 @@
     <ul class="nav-right">
       <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">home</a></li>
       <li><a href="/publications/" class="{% if page.url contains '/publications/' %}active{% endif %}">publications</a></li>
-      <li><a href="/blog/" class="{% if page.url contains '/blog/' %}active{% endif %}">blog</a></li>
+      <li><a href="/writing/" class="{% if page.url contains '/writing/' %}active{% endif %}">writing</a></li>
       <li><a href="/about/" class="{% if page.url contains '/about/' %}active{% endif %}">about</a></li>
     </ul>
   </nav>
+
 
   <!-- main -->
   <div class="content">
@@ -134,6 +135,7 @@
   function toggleMenu() {
     document.querySelector('.nav-right').classList.toggle('active');
   }
+
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
