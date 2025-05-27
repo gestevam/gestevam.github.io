@@ -93,6 +93,6 @@ After building a literature foundation, maintain it. Revisit core papers if a re
 
 Then repeat the process in another scientific space! This keeps things exciting, fresh, and creative when ideas are founded from multiple scientific domains.
 
-If you've made it this far, thanks for reading, and find this co-posted at the <a href="https://fraserlab.com/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Fraser Lab website</a>!
+If you've made it this far, thanks for reading, and find this co-posted at the <a href="https://fraserlab.com/news" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Fraser Lab website</a>!
 
 <div style="height: 100px;"></div>
