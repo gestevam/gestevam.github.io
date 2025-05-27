@@ -211,8 +211,8 @@ body.publications-page .content {
 }
 
 
-/*---------------------------- blog -----------------------------*/
-body.blog-page {
+/*---------------------------- writing -----------------------------*/
+body.writing-page {
   font-family: Arial, sans-serif;
   font-size: 17px;
   color: gray;
@@ -221,11 +221,11 @@ body.blog-page {
   min-height: 100vh;
 }
 
-.blog-page .content {
+.writing-page .content {
   flex-grow: 1;
 }
 
-.blog-page .content h1 {
+.writing-page .content h1 {
   font-weight: normal;
   margin-top: 60px;
   font-size: 35px;
@@ -233,33 +233,33 @@ body.blog-page {
   color: #gray;
 }
 
-.blog-page .content {
+.writing-page .content {
   margin: 0 150px 10px;
   line-height: 1.8;
 }
 
-.blog-page .blog-entry p {
+.writing-page .writing-entry p {
   color: black;
 }
 
 @media (max-width: 768px) {
-  .blog-page .content {
+  .writing-page .content {
     margin: 0 20px;
   }
 }
 
-.blog-title {
+.writing-title {
   font-size: 30px;
   font-weight: normal;
   color: #8806CE;
   text-decoration: none;
 }
 
-.blog-title:hover {
+.writing-title:hover {
   text-decoration: underline;
 }
 
-.blog-meta {
+.writing-meta {
   font-size: 17px;
   font-weight: 300;
   color: #8806CE;
@@ -277,17 +277,17 @@ body.blog-page {
 
 
 /*---------------------------- posts ----------------------------- */
-body.blog-post {
+body.writing-post {
   font-family: Arial, sans-serif;
   font-size: 17px;
   color: black;
 }
 
-.blog-post .content {
+.writing-post .content {
   margin: 0 150px 10px !important;
 }
 
-.blog-post h1 {
+.writing-post h1 {
   font-weight: normal;
   font-size: 30px;
   color: #8806CE;
@@ -303,20 +303,20 @@ h2 {
   color: #8806CE;
 }
 
-.blog-post .blog-meta {
+.writing-post .writing-meta {
   font-size: 17px;
   font-weight: 300;
   color: #8806CE;
   margin-bottom: 20px;
 }
 
-.blog-post p {
+.writing-post p {
   line-height: 1.8;
   color: black;
 }
 
 
-.blog-post .back-to-blog {
+.writing-post .back-to-writing {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 20px;
@@ -326,12 +326,12 @@ h2 {
   border-radius: 5px;
 }
 
-.blog-post .back-to-blog:hover {
+.writing-post .back-to-writing:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .blog-post .content {
+  .writing-post .content {
     margin: 0 20px;
   }
 }
