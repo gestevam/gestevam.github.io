@@ -293,6 +293,16 @@ body.blog-post {
   color: #8806CE;
 }
 
+h2 {
+  color: #8806CE;
+  font-weight: normal;
+}
+
+.bold-color {
+  font-weight: bold;
+  color: #8806CE;
+}
+
 .blog-post .blog-meta {
   font-size: 17px;
   font-weight: 300;
@@ -304,6 +314,7 @@ body.blog-post {
   line-height: 1.8;
   color: black;
 }
+
 
 .blog-post .back-to-blog {
   display: inline-block;
