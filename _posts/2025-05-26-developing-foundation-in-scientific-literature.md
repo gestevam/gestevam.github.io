@@ -3,8 +3,8 @@ title: "Developing a foundation in the scientific literature"
 date: 2025-05-26
 author: "Gabriella Estevam"
 layout: post
-permalink: /blog/developing-a-foundation-in-the-scientific-literature/
-body_class: blog-page
+permalink: /writing/developing-a-foundation-in-the-scientific-literature/
+body_class: writing-page
 ---
 
 
