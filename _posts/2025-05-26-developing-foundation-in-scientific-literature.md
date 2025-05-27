@@ -1,6 +1,6 @@
 ---
 title: "Developing a foundation in the scientific literature"
-date: 2025-05-27
+date: 2025-05-26
 author: "Gabriella Estevam"
 layout: post
 permalink: /blog/developing-a-foundation-in-the-scientific-literature/
