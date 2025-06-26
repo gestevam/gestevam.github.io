@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <meta name="google-site-verification" content="A1B2C3D4YOURCODE" />
+  <title>{% if page.title %}{{ page.title }} | Gabriella Estevam{% else %}Gabriella Estevam{% endif %}</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="google-site-verification" content="YOUR_GOOGLE_CODE_HERE" />
+  
   {% seo %}
 </head>
   
