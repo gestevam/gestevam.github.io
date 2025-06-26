@@ -3,8 +3,12 @@ description: "My Website"
 
 url: "https://gestevam.github.io"
 
+github_username: gestevam
+
 plugins:
+  - jekyll-seo-tag
   - jekyll-paginate
+  
 
 paginate: 3
 paginate_path: "/blog/page:num"
