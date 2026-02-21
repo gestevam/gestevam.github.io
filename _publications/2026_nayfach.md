@@ -1,6 +1,6 @@
 ---
 title: "Customizing CRISPR–Cas PAM specificity with protein language models"
-authors: Nayfach S, Bhatnagar S, Novichkov A, Kim N, Hoffnagle AM, Hussain R, **Estevam GO**, Hill E, Ruffolo JA, Silverstein RA, Gallagher J, Kleinstiver BP, Meeske AJ, Cameron P,& Madani A
+authors: Nayfach S, Bhatnagar S, Novichkov A, Kim N, Hoffnagle AM, Hussain R, **Estevam GO**, Hill E, Ruffolo JA, Silverstein RA, Gallagher J, Kleinstiver BP, Meeske AJ, Cameron P, Madani A
 journal: Nature Biotechnology
 pub_date: "2026-02-02"
 image: "/static/img/pub/2026_nayfach.png"
