@@ -1,7 +1,7 @@
 ---
 title: "Autoregulation of the MET receptor tyrosine kinase by its intracellular juxtamembrane domain"
 authors: "Linossi EM, Espinoza  CS, **Estevam GO**, Fraser JS, Jura N"
-journal: "Biochemical Society Transactions"
+journal: "Biochemical Journal"
 pub_date: "2025-12-17"
 pmid: "41383124"
 pmcid: "PMC8711257"
