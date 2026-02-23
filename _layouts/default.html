@@ -16,10 +16,9 @@
   "@type": "Person",
   "name": "Gabriella Estevam",
   "url": "https://gestevam.github.io",
-  "jobTitle": "scientist",
+  "jobTitle": "Scientist",
   "sameAs": [
     "https://github.com/gestevam",
-    "https://scholar.google.com/citations?hl=en&user=qqv8I40AAAAJ",
     "https://linkedin.com/in/gestevam"
   ]
 }
@@ -97,8 +96,12 @@
     }
   </style>
 </head>
-<body class="{{ page.body_class | default: 'default-class' }} {% if page.title == 'writing' %}writing-page{% endif %}">
 
+<body class="
+  {{ page.body_class | default: 'default-class' }}
+  {% if page.group %}{{ page.group }}-page{% endif %}
+  {% if page.title == 'writing' %}writing-page{% endif %}
+">
   <!-- navbar -->
   <nav class="navbar">
     <div class="nav-left">
@@ -109,7 +112,6 @@
       <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">home</a></li>
       <li><a href="/publications/" class="{% if page.url contains '/publications/' %}active{% endif %}">publications</a></li>
       <li><a href="/writing/" class="{% if page.url contains '/writing/' %}active{% endif %}">writing</a></li>
-      <li><a href="/about/" class="{% if page.url contains '/about/' %}active{% endif %}">about</a></li>
     </ul>
   </nav>
 
