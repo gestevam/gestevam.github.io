@@ -482,6 +482,11 @@ body.about-page .navbar {
 }
 
 /* Home page full about */
+#about-home-full {
+  height: auto !important;
+  padding: 60px 20px;
+}
+
 #about-home-full .about-page {
   font-family: Arial, sans-serif;
   display: flex;
@@ -490,7 +495,6 @@ body.about-page .navbar {
   align-items: flex-start;
   text-align: justify;
   line-height: 1.6;
-  margin-top: 80px;
   padding: 0 90px;
 }
 
@@ -499,7 +503,6 @@ body.about-page .navbar {
   #about-home-full .about-page {
     flex-direction: column;
     padding: 0 20px;
-    margin-top: 60px;
   }
 }
 
