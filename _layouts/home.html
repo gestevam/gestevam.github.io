@@ -3,13 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-  {% if page.title == "Home" %}
-    Gabriella Estevam
-  {% else %}
-    {{ page.title }} | Gabriella Estevam
-  {% endif %}
-  </title>
+  <title>{{ page.title }} | Gabriella Estevam</title>
   <meta name="google-site-verification" content="6IL0CKEG0CD6UN0RgkgGeLEw-_dTh1lJ41VF0-DCmAI" />
   <meta name="description" content="Gabriella Estevam’s personal website">
   <meta property="og:title" content="Gabriella Estevam | Scientist">
@@ -22,18 +16,14 @@
   "@type": "Person",
   "name": "Gabriella Estevam",
   "url": "https://gestevam.github.io",
-  "jobTitle": "scientist",
+  "jobTitle": "Scientist",
   "sameAs": [
     "https://github.com/gestevam",
-    "https://scholar.google.com/citations?hl=en&user=qqv8I40AAAAJ",
-    "https://linkedin.com/in/gestevam",
-    "https://gestevam.github.io",
-    "gabriellaestevam.com",
+    "https://linkedin.com/in/gestevam"
   ]
 }
 </script>
 </head>
-  
   <style>
 
     section {
@@ -47,6 +37,8 @@
 
     #home {
       background-color: white;
+      padding: 0;
+      overflow: hidden;
     }
 
     .navbar {
@@ -144,7 +136,7 @@
     }
 
     #about-home {
-      margin-top: -120px;
+      margin-top: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -190,7 +182,6 @@
     }
 
 
-
   </style>
 </head>
 
@@ -206,7 +197,6 @@
       <li><a href="/" class="home-active">home</a></li>
       <li><a href="/publications/">publications</a></li>
       <li><a href="/writing/">writing</a></li>
-      <li><a href="/about/">about</a></li>
     </ul>
   </nav>
 
@@ -246,23 +236,12 @@
   });
 </script>
 
-  <!-- top vis divider -->
-  <hr style="border: 1px solid #E6D2F9; width: 80%;">
 
-  <!-- about, abridged -->
-  <section id="about-home" style="margin-top: -50px; padding-top: 0; padding-bottom: 0px;">
-    <div class="figure">
-      <img src="/static/img/abt/IMG_6854.jpg" alt="A description of the image">
-    </div>
-    <div class="text-block">
-      <p>Hi, I'm Gabriella! I'm a biochemist and structural biologist.</p>
-      <p>Welcome to my site, where you can explore my work, publications, and more.</p>
-      <p>Visit my <a href="/about/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;">about page</a> to learn more about me.</p>
-    </div>
+  <!-- full About section on home -->
+  <section id="about-home-full" style="height: auto; padding: 60px 20px;">
+    {% include about-home.html %}
   </section>
 
-  <!-- bottom vis divider -->
-  <hr style="border: 1px solid #E6D2F9; width: 80%;">
 
   <!-- footer -->
   <div style="
@@ -271,22 +250,9 @@
       align-items: center;
       justify-content: center;
       width: 80%;
-      margin: 10px auto;
+      margin: 150px 50px 60px 100px;
       text-align: center;
       position: relative;">
-
-    <!-- social -->
-    <div class="contact-section" style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
-      <a href="https://linkedin.com/in/gestevam" target="_blank">
-        <img src="/static/img/social/InBug-Black.png" alt="LinkedIn" style="width: 30px; height: 30px">
-      </a>
-      <a href="https://github.com/gestevam" target="_blank">
-        <img src="/static/img/social/github-mark.png" alt="GitHub" style="width: 32px; height: 32px">
-      </a>
-      <a href="/contact">
-        <img src="/static/img/social/email-icon.png" alt="Email" class="social-icon" style="width: 32px; height: 32px">
-      </a>
-    </div>
 
     <!-- copyright -->
     <div style="font-size: 11px; color: #CED4DA;">
