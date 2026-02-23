@@ -221,7 +221,7 @@ body.publications-page .content {
   }
 }
 
-/* ------------------- writing blog index ------------------- */
+/* ------------------- writing index ------------------- */
 
 .writing-container {
   width: 75%;
@@ -267,7 +267,7 @@ body.publications-page .content {
 }
 
 .writing-index-title {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: normal;
   margin: 0 auto 12px auto;
   max-width: 800px;
@@ -285,7 +285,7 @@ body.publications-page .content {
 .writing-index-excerpt {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
   line-height: 1.8;
   text-align: justify;
