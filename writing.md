@@ -9,6 +9,7 @@ permalink: /writing/
 
   <h1 class="writing-page-title">Writing</h1>
 
+  <hr>
   <ul class="writing-index-list">
     {% for post in site.posts %}
       <li class="writing-index-item">
@@ -20,6 +21,7 @@ permalink: /writing/
           {{ post.excerpt | strip_html | truncate: 400 }}
         </p>
       </li>
+      <hr>
     {% endfor %}
   </ul>
 
