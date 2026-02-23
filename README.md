@@ -19,4 +19,4 @@ To make a similar site:
      <br>bundle install
      <br>bundle exec jekyll serve</p>
 
-This website was built with inspiration from open source code
+This website was built with inspiration from [open source code](https://fraserlab.com/2020/05/03/Clone-this-website/)
