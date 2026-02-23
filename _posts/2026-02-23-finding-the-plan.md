@@ -1,9 +1,9 @@
 ---
-title: "The IDP as a road map"
-date: 2026-02-22
+title: "Finding the plan: an IDP guide"
+date: 2026-02-23
 author: "Gabriella Estevam"
 layout: post
-permalink: /writing/idp-road-map/
+permalink: /writing/finding-the-plan/
 body_class: writing-page
 ---
 
