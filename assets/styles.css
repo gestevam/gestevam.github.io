@@ -221,72 +221,105 @@ body.publications-page .content {
   }
 }
 
+/* ------------------- writing timeline ------------------- */
 
-
-
-
-/*---------------------------- writing -----------------------------*/
-body.writing-page {
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  color: gray;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.timeline-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-.writing-page .content {
-  flex-grow: 1;
+
+/* Main timeline line */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.writing-page .content h1 {
-  font-weight: normal;
-  margin-top: 60px;
-  font-size: 35px;
-  font-weight: normal;
-  color: #gray;
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  background: #E6D2F9;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
-.writing-page .content {
-  margin: 0 150px 10px;
-  line-height: 1.8;
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.writing-page .writing-entry p {
-  color: black;
+.timeline-item.left {
+  left: 0;
+  text-align: right;
 }
 
-@media (max-width: 768px) {
-  .writing-page .content {
-    margin: 0 20px;
-  }
+.timeline-item.right {
+  left: 50%;
 }
 
-.writing-title {
-  font-size: 30px;
-  font-weight: normal;
+/* Card */
+.timeline-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-title a {
   color: #8806CE;
   text-decoration: none;
 }
 
-.writing-title:hover {
+.timeline-title a:hover {
   text-decoration: underline;
 }
 
-.writing-meta {
-  font-size: 17px;
+.timeline-meta {
+  font-size: 14px;
+  color: #999;
   font-weight: 300;
-  color: #8806CE;
+  margin-bottom: 15px;
 }
 
-.read-more {
-  font-size: 15px;
-  color: #8806CE;
-  text-decoration: none;
+.timeline-excerpt {
+  color: #000;
+  line-height: 1.7;
 }
 
-.read-more:hover {
-  text-decoration: underline;
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left {
+    text-align: left;
+  }
 }
 
 
@@ -351,6 +384,8 @@ h2 {
 }
 
 /*---------------------------- about ------------------------------ */
+
+
 body.about-page {
   font-family: Arial, sans-serif;
   background-color: white;
@@ -446,6 +481,27 @@ body.about-page .navbar {
   }
 }
 
+/* Home page full about */
+#about-home-full .about-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 80px;
+  padding: 0 90px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #about-home-full .about-page {
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+}
 
 
 /*--------------------- contact form --------------------------*/
