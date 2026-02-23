@@ -1,34 +1,26 @@
 ---
 layout: default
-title: writing
+title: Writing
+body_class: writing-page
 permalink: /writing/
 ---
 
-<h1> </h1>
-<div class="container-fluid">
+<div class="writing-container">
 
-  {% if site.posts.size > 0 %}
+  <h1 class="writing-page-title">Writing</h1>
+
+  <ul class="writing-index-list">
     {% for post in site.posts %}
-      <hr>
-      <div class="row writing-entry">
-        <div class="col-md-6">
-          <h5><a href="{{ post.url }}" class="writing-title">{{ post.title }}</a></h5>
-          <h6 class="writing-meta">{{ post.date | date: "%B %d, %Y" }} | {{ post.author }}</h6>
-          <p>{{ post.content | markdownify }}</p>
-        </div>
-      </div>
+      <li class="writing-index-item">
+        <p class="writing-index-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <h2 class="writing-index-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="writing-index-excerpt">
+          {{ post.excerpt | strip_html | truncate: 400 }}
+        </p>
+      </li>
     {% endfor %}
-  {% else %}
-    <p>No writing posts available.</p>
-  {% endif %}
-
-  <!-- caveat -->
-  <div class="row">
-  <div class="col-md-6">
-    <p style="font-size: 15px; color: gray; margin-top: 100px;">
-      *Personal opinions only; not representative of my employer
-    </p>
-  </div>
-</div>
+  </ul>
 
 </div>
