@@ -23,4 +23,4 @@
      bundle exec jekyll serve
     ```
 
-#### **This website was built with inspiration and modifications from [open source code](https://github.com/fraser-lab/fraser-lab.github.io) and its accompanying [post](https://fraserlab.com/2020/05/03/Clone-this-website/)**
+#### **This website was built with inspiration and modifications from this [open source code](https://github.com/fraser-lab/fraser-lab.github.io) and its accompanying [post](https://fraserlab.com/2020/05/03/Clone-this-website/)**
