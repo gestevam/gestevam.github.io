@@ -1,5 +1,5 @@
 ---
-title: "A Space for Independent Exploration"
+title: "A space for independent exploration"
 date: 2025-04-24
 author: "Gabriella Estevam"
 layout: post
