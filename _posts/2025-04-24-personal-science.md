@@ -13,4 +13,4 @@ I often find myself returning to the core principles of organic and physical che
 
 This writing page is meant to be that outlet: a space to investigate small-scale scientific questions, offer practical tools, stay connected with other scientists, and highlight their work and perspectives along the way.
 
-Thank you for visiting — I’m happy you’re here.
+Thank you for visiting - I’m happy you’re here.
