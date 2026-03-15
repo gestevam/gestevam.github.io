@@ -11,7 +11,7 @@ If I want to know what’s latest in the literature, if I’m not reading prepri
 
 I’ve experimented with several approaches, from science social media to RSS feeds - which, out of all the options, has been the most effective when following the <a href="https://fraserlab.com/2013/09/28/The-Fraser-Lab-method-of-following-the-scientific-literature/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Fraser Lab method</a>.
 
-RSS feed categories and customizations such as keywords and authors have worked well for journal publications, but are too broad for the way I engage with preprints in particular - __it helps to aggregate but not curate__.
+RSS feed categories and customizations such as keywords and authors have worked well for journal publications, but are too broad for the way I engage with preprints in particular - __it helps to aggregate, but not curate__.
 
 I found myself craving an easy-to-digest, niche, field-focused, automated, __preprint-only__ system to accompany, not replace, the methods I already use.
 
