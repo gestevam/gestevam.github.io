@@ -15,7 +15,7 @@ RSS feed categories and customizations such as keywords and authors have worked 
 
 I found myself craving an easy-to-digest, niche, field-focused, automated, __preprint-only__ system to accompany, not replace, the methods I already use.
 
-With the help of Claude (Sonnet 4.6), I vibe coded something I’m now pretty happy with - an automated HTML preprint fetcher that curates bioRxiv preprints daily. The script runs once a day silently in the morning, so when I get into the office, all I have to do is open the feed output file and viszualize it in my default browser. Then, I have the option to click a title that opens the preprint in a new tab, and from there I can bank it in my paper organizer app using a browser extension. Once the file is opened in a browser, it can be bookmarked for easy access (and it will get updated each day too). If at 4pm I want to see if more papers are deposited, I have the option to rerun the script. Regardless, I won’t be spammed with papers and “alerts” or overwhelmed with a long list of titles and other app features.
+With the help of Claude (Sonnet 4.6), I vibe coded something I’m now pretty happy with - an automated HTML preprint fetcher that curates bioRxiv preprints daily. The script runs once a day silently in the morning, so when I get into the office, all I have to do is open the feed output file after my computer wakes up and viszualize it in my default browser. Then, I have the option to click a title that opens the preprint in a new tab, and from there I can bank it in my paper organizer app using a browser extension. Once the output file is opened in a browser, it can be bookmarked for easy access (and it will get updated each day too). If at 4pm I want to see if more papers are deposited, I have the option to rerun the script. Regardless, I won’t be spammed with papers and “alerts” or overwhelmed with a long list of titles and other app features.
 
 The advantage of HTML over a widget or other desktop app is the ease of operation. I wanted to generate shareable code that can operate for anyone, gratis. Being someone that appreciates customization, I required that as an option for others and my future self too. The draw back of this code is that it is locally run, so I can’t access it on my phone, but this is a non-issue since that’s where I prefer to engage with <a href="https://feedly.com/" style="background-color: #F7F0FD; font-family: Courier, monospace; padding: 2px 2px; color: #8806CE; text-decoration: none;"> Feedly</a>.
 
@@ -60,8 +60,9 @@ Check it out - hopefully it's helpful and easy to use!
     ```
     python scheduler.py --install-launchd
     ```
+8. Open the output file from the "feed output" subfolder, view feed in broswer, and bookmark
 <br>
-At any later point, the preprint fetch can be run on your terminal, just rerun ```python biorxiv_fetcher.py```
+At any later point, the preprint fetch can be refreshed on your terminal, just rerun ```python biorxiv_fetcher.py```
 
 <br>
 
