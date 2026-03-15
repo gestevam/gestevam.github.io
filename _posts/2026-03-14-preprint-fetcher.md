@@ -37,7 +37,7 @@ Check it out - hopefully it's helpful and easy to use!
 
 2. Go into the folder
    ```
-   cd biorxiv_shareable
+   cd preprint_fetcher
    ```
 3. Create a virtual environment
     ```
