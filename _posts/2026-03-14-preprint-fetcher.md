@@ -13,7 +13,7 @@ I’ve experimented with several approaches, from science social media to RSS fe
 
 RSS feed categories and customizations such as keywords and authors have worked well for journal publications, but are too broad for the way I engage with preprints in particular - __it helps to aggregate but not curate__{: .bold-color}.
 
-I found myself craving an easy-to-digest, niche field-focused, automated, __preprint-only__{: .bold-color} system to accompany, not replace, the methods I already use.
+I found myself craving an easy-to-digest, niche, field-focused, automated, __preprint-only__{: .bold-color} system to accompany, not replace, the methods I already use.
 
 With the help of Claude (Sonnet 4.6), I vibe coded something I’m now pretty happy with - an automated HTML preprint fetcher that curates bioRxiv preprints daily. The script runs once a day silently in the morning, so when I get into the office, all I have to do is open the feed output file, which is visualized in my default browser. Then, I have the option to click a title that opens the preprint in a new tab, and from there I can bank it in my paper organizer app using a browser extension. If at 4pm I want to see if more papers are deposited, I have the option to rerun the script. Regardless, I won’t be spammed with papers and “alerts” or overwhelmed with a long list of titles and other app features.
 
