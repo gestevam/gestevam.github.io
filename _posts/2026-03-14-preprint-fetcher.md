@@ -75,7 +75,7 @@ At any later point, the preprint fetch can be run on your terminal, just rerun `
     - Preprint recency
     - Maximum number of papers
 
-2. Timing and frequency can also be changed in the scheduler script in case a different interval or time is preferred. In the source code the papers are fetched at 6am everyday, but this can be changed to 4pm on just Friday as shown below.
+2. Timing and frequency can also be changed in the scheduler script in case a different interval or time is preferred. In the source code the papers are fetched at 6am everyday, but this can be changed to 6pm on just Friday as shown below.
 
 
     ```
