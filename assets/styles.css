@@ -221,7 +221,7 @@ body.publications-page .content {
   }
 }
 
-/* ------------------- writing index ------------------- */
+/* ------------------- writing blog index ------------------- */
 
 .writing-container {
   width: 75%;
@@ -367,6 +367,30 @@ h2 {
   .writing-post .content {
     margin: 0 20px;
   }
+}
+
+.keep-reading-btn {
+  display: block;
+  max-width: 800px;
+  margin: 12px auto 0 auto;
+  text-align: left;
+  color: #8806CE;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.keep-reading-btn:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.writing-disclaimer {
+  max-width: 800px;
+  margin: 80px auto 20px auto;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 /*---------------------------- about ------------------------------ */
